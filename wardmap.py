@@ -27,7 +27,7 @@ if not os.path.exists("./output"):
 
 placementsvg = open("birminghamWardsTemplate.svg", 'r').read()
 
-df = pd.read_csv('territoryHistory.csv', index_col=0)
+df = pd.read_csv('wardmap.csv', index_col=0)
 
 for r in range(0, len(df.index)):   #Go through each row in the dataframe (representing each session)
     t = df.index[r]
